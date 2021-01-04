@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #c7d6e1;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ly_center {
+  position: absolute;
+}
+
+.bl_card {
+  position: absolute;
+  top: 125px;
+  left: 80px;
+  width: 240px;
+  height: 150px;
+  background: #fff;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+
+  &__activated {
+    animation: fadeIn 0.6s ease-in-out both 0.4s;
+  }
+
+  &__inactivated {
+    animation: fadeOut 0.5s ease-in-out both;
+  }
+
+  &_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 110px;
+    color: #616e7d;
+
+    &_title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    &_description {
+      font-size: 12px;
+    }
+  }
+
+  &_button {
+    background: #3ca7fb;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    color: #fff;
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: #2196f3;
+    }
+  }
+}
+
+.bl_label {
+  &_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 40px solid #8391a1;
+    border-left: 40px solid transparent;
+  }
+
+  &_text {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
