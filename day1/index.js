@@ -1,11 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
-  const target = document.querySelector('#day1')
+  const target = document.querySelector('#menuIcon')
 
   target.addEventListener('click', () => {
-    target.classList.toggle('bl_day1__activated')
+    target.classList.toggle('bl_menuIcon__activated')
 
-    if (target.classList.contains('bl_day1__inactivated')) {
-      target.classList.remove('bl_day1__inactivated')
+    if (target.classList.contains('bl_menuIcon__inactivated')) {
+      target.classList.remove('bl_menuIcon__inactivated')
     }
   })
 });
