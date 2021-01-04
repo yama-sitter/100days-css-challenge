@@ -1,11 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
-  const target = document.querySelector('#menuIcon')
+  const $menuIcon = document.querySelector('#menuIcon')
 
-  target.addEventListener('click', () => {
-    target.classList.toggle('bl_menuIcon__activated')
+  $menuIcon.addEventListener('click', () => {
+    $menuIcon.classList.toggle('bl_menuIcon__activated')
 
-    if (target.classList.contains('bl_menuIcon__inactivated')) {
-      target.classList.remove('bl_menuIcon__inactivated')
+    if ($menuIcon.classList.contains('bl_menuIcon__inactivated')) {
+      $menuIcon.classList.remove('bl_menuIcon__inactivated')
     }
   })
 });
