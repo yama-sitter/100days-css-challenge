@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fda231;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ly_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bl_card {
+  width: 240px;
+  height: 280px;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bl_card * {
+  color: #497081;
+}
+
+.bl_card_head > p {
+  margin: 0;
+}
+
+.bl_card_head_title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bl_card_head_subTitle {
+  font-size: 12px;
+}
+
+.bl_card_separation {
+  margin: 20px 0 24px;
+  border: none;
+  border-top: 1px solid #d4dce0;
+}
+
+.bl_card_list {
+  padding: 0;
+}
+
+.bl_card_list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  list-style: none;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.bl_card_list_item:last-of-type {
+  margin-bottom: 0;
+}
+
+.bl_card_list_item > * {
+  cursor: pointer;
+}
+
+.bl_card_list_item_title {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  line-height: 14px;
+}
+
+.bl_card_list_item_check {
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #497081;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bl_card_list_item_checked {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  opacity: 0;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.bl_card_list_item > input[type="checkbox"] {
+  display: none;
+}
+
+.bl_card_list_item > input[type="checkbox"]:checked ~ .bl_card_list_item_title {
+  color: #c8d4d9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.bl_card_list_item > input[type="checkbox"]:checked ~ .bl_card_list_item_check {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0;
+}
+
+.bl_card_list_item > input[type="checkbox"]:checked ~ .bl_card_list_item_checked {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 12px;
+  height: 6px;
+  border: none;
+  border-left: 1px solid #c8d4d9;
+  border-bottom: 1px solid #c8d4d9;
+  -webkit-transform: scale(1) rotate(-45deg);
+          transform: scale(1) rotate(-45deg);
+}
+/*# sourceMappingURL=style.css.map */

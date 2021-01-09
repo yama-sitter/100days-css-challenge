@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fda231;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ly_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bl_card {
+  width: 240px;
+  height: 280px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px 30px;
+  box-sizing: border-box;
+
+  & * {
+    color: #497081;
+  }
+
+  &_head {
+    & > p {
+      margin: 0;
+    }
+
+    &_title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    &_subTitle {
+      font-size: 12px;
+    }
+  }
+
+  &_separation {
+    margin: 20px 0 24px;
+    border: none;
+    border-top: 1px solid #d4dce0;
+  }
+
+  &_list {
+    padding: 0;
+
+    &_item {
+      $item: &;
+
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      list-style: none;
+      font-size: 13px;
+      margin-bottom: 20px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      & > * {
+        cursor: pointer;
+      }
+
+      &_title {
+        transition: all 0.3s ease-in-out;
+        line-height: 14px;
+      }
+
+      &_check {
+        opacity: 1;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #497081;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-sizing: border-box;
+      }
+
+      &_checked {
+        position: absolute;
+        top: 2px;
+        right: 0;
+        opacity: 0;
+        transform: scale(0.1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      & > input[type="checkbox"] {
+        display: none;
+
+        &:checked ~ #{$item}_title {
+          color: #c8d4d9;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:checked ~ #{$item}_check {
+          transition: all 0.3s ease-in-out;
+          transform: scale(1.2);
+          opacity: 0;
+        }
+
+        &:checked ~ #{$item}_checked {
+          opacity: 1;
+          transition: all 0.3s ease-in-out;
+          width: 12px;
+          height: 6px;
+          border: none;
+          border-left: 1px solid #c8d4d9;
+          border-bottom: 1px solid #c8d4d9;
+          transform: scale(1) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
