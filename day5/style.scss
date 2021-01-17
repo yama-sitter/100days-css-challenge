@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #5ca4ea;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ly_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bl_search {
+  width: 260px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &_form {
+    box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    height: 40px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+
+    &_input {
+      padding: 0;
+      border: none;
+      outline: none;
+      appearance: none;
+      font-size: 13px;
+      font-weight: 600;
+      color: #4d8dcb;
+    }
+
+    &_icon {
+      color: #5ca4ea;
+      display: flex;
+      align-items: center;
+
+      & > span {
+        display: inline-block;
+      }
+    }
+  }
+
+  &_suggestions {
+    display: none;
+    position: absolute;
+    width: calc(100% - 15px);
+    margin: 0;
+    padding: 0 0 0 15px;
+    background: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    color: #6e6e6e;
+    list-style: none;
+
+    &__active {
+      display: block;
+    }
+
+    li {
+      margin: 18px 0;
+      cursor: pointer;
+
+      &:hover {
+        color: #4d8dcb;
+      }
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  color: #a4b9ce;
+}
