@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: -webkit-gradient(linear, left bottom, right top, from(#d2592a), to(#fdb03a));
+  background: linear-gradient(to top right, #d2592a 0%, #fdb03a 100%);
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ly_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bl_counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  -webkit-box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.1);
+  padding: 0 4px;
+}
+
+.bl_counter > button {
+  width: 32px;
+  height: 32px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  position: relative;
+}
+
+.bl_counter > button > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+.bl_counter > button:hover {
+  color: #fff;
+}
+
+.bl_counter_minus {
+  color: #e26e6e;
+}
+
+.bl_counter_minus:hover {
+  background-color: #e26e6e;
+}
+
+.bl_counter_plus {
+  color: #8ed273;
+}
+
+.bl_counter_plus:hover {
+  background-color: #8ed273;
+}
+
+.bl_counter_count {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.bl_counter_count > span {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  color: #6a85a0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bl_counter_count > span.fadeInUp {
+  -webkit-animation: fadeIn 0.3s ease-out 0.15s backwards;
+          animation: fadeIn 0.3s ease-out 0.15s backwards;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.bl_counter_count > span.fadeOutUp {
+  -webkit-animation: fadeOut 0.3s ease-in;
+          animation: fadeOut 0.3s ease-in;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  opacity: 0;
+}
+
+.bl_counter_count > span.fadeInDown {
+  animation: fadeOut 0.3s ease-out 0.15s reverse backwards;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.bl_counter_count > span.fadeOutDown {
+  animation: fadeIn 0.3s ease-in reverse;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
