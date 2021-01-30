@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #75c1e8;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl_sky {
+  &_sun {
+    position: absolute;
+    top: 40px;
+    left: 64px;
+    background-color: #ffd93c;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    animation: moveRight 60s linear infinite alternate both;
+  }
+
+  &_cloud {
+    position: absolute;
+    animation: moveLeft 60s linear infinite alternate both;
+
+    &_1 {
+      top: 112px;
+      left: 280px;
+    }
+
+    &_2 {
+      top: 80px;
+      left: 192px;
+    }
+
+    &_3 {
+      top: 88px;
+      left: 56px;
+    }
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}

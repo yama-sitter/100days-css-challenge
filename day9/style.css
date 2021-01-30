@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #75c1e8;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl_sky_sun {
+  position: absolute;
+  top: 40px;
+  left: 64px;
+  background-color: #ffd93c;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  -webkit-animation: moveRight 60s linear infinite alternate both;
+          animation: moveRight 60s linear infinite alternate both;
+}
+
+.bl_sky_cloud {
+  position: absolute;
+  -webkit-animation: moveLeft 60s linear infinite alternate both;
+          animation: moveLeft 60s linear infinite alternate both;
+}
+
+.bl_sky_cloud_1 {
+  top: 112px;
+  left: 280px;
+}
+
+.bl_sky_cloud_2 {
+  top: 80px;
+  left: 192px;
+}
+
+.bl_sky_cloud_3 {
+  top: 88px;
+  left: 56px;
+}
+
+@-webkit-keyframes moveRight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes moveLeft {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
