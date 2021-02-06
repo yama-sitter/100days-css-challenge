@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #1bbe9e;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ly_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bl_circle {
+  &_bg {
+    fill: none;
+    stroke: #12836d;
+    stroke-width: 4px;
+  }
+
+  &_loader {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 4px;
+    stroke-dasharray: 288;
+    stroke-linecap: round;
+    animation: line 4s linear infinite both, spin 4s linear infinite both;
+    transform-origin: 50% 50%;
+  }
+}
+
+@keyframes line {
+  0% {
+    stroke-dashoffset: 576;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0) translateZ(0);
+  }
+  100% {
+    transform: rotate(360deg) translateZ(0);
+  }
+}
