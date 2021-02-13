@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #5a717b;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ly_center {
+  position: absolute;
+  height: 130px;
+  width: 400px;
+  top: 135px;
+  left: 0;
+  -webkit-transform: perspective(60px);
+          transform: perspective(60px);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.bl_card {
+  position: absolute;
+  top: 0;
+  left: 130px;
+  width: 140px;
+  height: 130px;
+  background-color: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bl_card_header {
+  height: 30px;
+  background-color: #ff9800;
+}
+
+.bl_card_content {
+  padding: 17px 14px;
+}
+
+.bl_card_content > .bl_card_content_line + .bl_card_content_line {
+  margin-top: 6px;
+}
+
+.bl_card_content_line {
+  background-color: #e9e9e9;
+  height: 4px;
+}
+
+.bl_card_1 {
+  -webkit-animation: move-1 5s ease-in-out infinite both;
+          animation: move-1 5s ease-in-out infinite both;
+}
+
+.bl_card_2 {
+  -webkit-animation: move-2 5s ease-in-out infinite both;
+          animation: move-2 5s ease-in-out infinite both;
+}
+
+.bl_card_3 {
+  -webkit-animation: move-3 5s ease-in-out infinite both;
+          animation: move-3 5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes move-1 {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  }
+  33.33% {
+    -webkit-transform: translate3d(145px, 0, -45px);
+            transform: translate3d(145px, 0, -45px);
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+  66.66% {
+    -webkit-transform: translate3d(-145px, 0, -45px);
+            transform: translate3d(-145px, 0, -45px);
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes move-1 {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  }
+  33.33% {
+    -webkit-transform: translate3d(145px, 0, -45px);
+            transform: translate3d(145px, 0, -45px);
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+  66.66% {
+    -webkit-transform: translate3d(-145px, 0, -45px);
+            transform: translate3d(-145px, 0, -45px);
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@-webkit-keyframes move-2 {
+  0%,
+  100% {
+    -webkit-transform: translate3d(145px, 0, -45px);
+            transform: translate3d(145px, 0, -45px);
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+  33.33% {
+    -webkit-transform: translate3d(-145px, 0, -45px);
+            transform: translate3d(-145px, 0, -45px);
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+  66.66% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes move-2 {
+  0%,
+  100% {
+    -webkit-transform: translate3d(145px, 0, -45px);
+            transform: translate3d(145px, 0, -45px);
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+  33.33% {
+    -webkit-transform: translate3d(-145px, 0, -45px);
+            transform: translate3d(-145px, 0, -45px);
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+  66.66% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@-webkit-keyframes move-3 {
+  0%,
+  100% {
+    -webkit-transform: translate3d(-145px, 0, -45px);
+            transform: translate3d(-145px, 0, -45px);
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+  33.33% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  }
+  66.66% {
+    -webkit-transform: translate3d(145px, 0, -45px);
+            transform: translate3d(145px, 0, -45px);
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes move-3 {
+  0%,
+  100% {
+    -webkit-transform: translate3d(-145px, 0, -45px);
+            transform: translate3d(-145px, 0, -45px);
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+  33.33% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.2);
+  }
+  66.66% {
+    -webkit-transform: translate3d(145px, 0, -45px);
+            transform: translate3d(145px, 0, -45px);
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+/*# sourceMappingURL=style.css.map */
