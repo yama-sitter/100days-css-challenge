@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #9b59b6;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+.bl_logo {
+  position: absolute;
+  top: 160px;
+  left: 165px;
+}
+
+.bl_logo__white > svg {
+  fill: #fff;
+}
+
+.bl_logo__purple > svg {
+  fill: #9b59b6;
+}
+
+.bl_logo__small {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.bl_logo__normal {
+  -webkit-transition: all 0.5s ease-out 0.3s;
+  transition: all 0.5s ease-out 0.3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.bl_logo__big {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  -webkit-transform: scale(10);
+          transform: scale(10);
+}
+/*# sourceMappingURL=style.css.map */

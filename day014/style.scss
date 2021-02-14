@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #9b59b6;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+}
+
+.bl_logo {
+  position: absolute;
+  top: 160px;
+  left: 165px;
+
+  &__white > svg {
+    fill: #fff;
+  }
+
+  &__purple > svg {
+    fill: #9b59b6;
+  }
+
+  &__small {
+    transition: all 0.5s ease-in;
+    transform: scale(0);
+  }
+
+  &__normal {
+    transition: all 0.5s ease-out 0.3s;
+    transform: scale(1);
+  }
+
+  &__big {
+    transition: all 0.5s ease-in;
+    transform: scale(10);
+  }
+}
