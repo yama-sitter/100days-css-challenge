@@ -5,7 +5,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   $links.forEach($link => {
     $link.addEventListener('click', () => {
-      console.log($link)
       $menuItems.classList.toggle('active')
       $menuButton.classList.toggle('active')
     })
