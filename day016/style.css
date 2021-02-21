@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@-webkit-keyframes big {
+  0% {
+    z-index: 2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    z-index: 2;
+    -webkit-transform: scale(3.0625);
+            transform: scale(3.0625);
+  }
+}
+
+@keyframes big {
+  0% {
+    z-index: 2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    z-index: 2;
+    -webkit-transform: scale(3.0625);
+            transform: scale(3.0625);
+  }
+}
+
+@-webkit-keyframes small {
+  0% {
+    z-index: 2;
+    -webkit-transform: scale(3.0625);
+            transform: scale(3.0625);
+  }
+  99% {
+    z-index: 2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    z-index: 1;
+  }
+}
+
+@keyframes small {
+  0% {
+    z-index: 2;
+    -webkit-transform: scale(3.0625);
+            transform: scale(3.0625);
+  }
+  99% {
+    z-index: 2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    z-index: 1;
+  }
+}
+
+.bl_images {
+  padding: 2px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.bl_images.active .bl_images_image:not(.active) {
+  background: #000;
+}
+
+.bl_images.active .bl_images_image:not(.active) > img {
+  opacity: 0;
+}
+
+.bl_images_image {
+  width: 128px;
+  height: 128px;
+  margin: 2px;
+  cursor: pointer;
+  -webkit-transition: z-index 0s linear 0.5s, -webkit-transform 0.5s ease-in-out;
+  transition: z-index 0s linear 0.5s, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, z-index 0s linear 0.5s;
+  transition: transform 0.5s ease-in-out, z-index 0s linear 0.5s, -webkit-transform 0.5s ease-in-out;
+  -webkit-animation: small 0.5s ease-in-out both;
+          animation: small 0.5s ease-in-out both;
+}
+
+.bl_images_image > img {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.bl_images_image.active {
+  -webkit-animation: big 0.5s ease-in-out both;
+          animation: big 0.5s ease-in-out both;
+}
+
+.bl_images_image_1 {
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.bl_images_image_2 {
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+
+.bl_images_image_3 {
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+
+.bl_images_image_4 {
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+
+.bl_images_image_5 {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.bl_images_image_6 {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+.bl_images_image_7 {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+.bl_images_image_8 {
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+}
+
+.bl_images_image_9 {
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+.bl_images_image > img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 1 / 1;
+}
+/*# sourceMappingURL=style.css.map */
