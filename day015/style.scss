@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #4a627a;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes list-top-close {
+  0% {
+    transform: translate3d(0, -20px, 0) scaleY(0.5) scaleX(6);
+  }
+  60% {
+    transform: translate3d(0, -20px, 0) scaleY(0.5) scaleX(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes list-top-open {
+  0% {
+    transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
+  }
+  20% {
+    transform: translate3d(0, 3px, 0) scaleY(1) scaleX(1);
+  }
+  40% {
+    transform: translate3d(0, -20px, 0) scaleY(0.5) scaleX(1);
+  }
+  100% {
+    transform: translate3d(0, -20px, 0) scaleY(0.5) scaleX(6);
+  }
+}
+
+@keyframes list-bottom-close {
+  0% {
+    transform: translate3d(0, 20px, 0) scaleY(0.5) scaleX(6);
+  }
+  60% {
+    transform: translate3d(0, 20px, 0) scaleY(0.5) scaleX(1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes list-bottom-open {
+  0% {
+    transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
+  }
+  20% {
+    transform: translate3d(0, -3px, 0) scaleY(1) scaleX(1);
+  }
+  40% {
+    transform: translate3d(0, 20px, 0) scaleY(0.5) scaleX(1);
+  }
+  100% {
+    transform: translate3d(0, 20px, 0) scaleY(0.5) scaleX(6);
+  }
+}
+
+.bl_menu {
+  &_button {
+    $parent: &;
+
+    z-index: 1;
+    position: absolute;
+    top: 187px;
+    left: 175px;
+    width: 50px;
+    height: 26px;
+    transition: width, height 0.5s ease-in-out 0.5s;
+    cursor: pointer;
+    pointer-events: all;
+
+    &_line {
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      background: #fff;
+
+      &_top {
+        top: 0;
+        animation: list-top-close 1s ease both;
+      }
+
+      &_bottom {
+        bottom: 0;
+        animation: list-bottom-close 1s ease both;
+      }
+    }
+
+    &.active {
+      cursor: default;
+      pointer-events: none;
+
+      #{$parent}_line {
+        &_top {
+          animation: list-top-open 1s ease both;
+        }
+
+        &_bottom {
+          animation: list-bottom-open 1s ease both;
+        }
+      }
+    }
+  }
+
+  &_items {
+    $parent: &;
+
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    &_list {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+
+      & > li {
+        list-style: none;
+        font-weight: 600;
+        cursor: default;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+
+    &.active {
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out 0.5s;
+
+      #{$parent}_list {
+        & > li {
+          pointer-events: all;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
