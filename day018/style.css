@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ly_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bl_space {
+  width: 280px;
+  height: 280px;
+  border-radius: 9999px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1d4253), to(#6bb5c4));
+  background: linear-gradient(to bottom, #1d4253 0%, #6bb5c4 100%);
+  overflow: hidden;
+}
+
+.bl_space_star {
+  position: absolute;
+  top: 0;
+  left: -120px;
+  width: 120px;
+  height: 2px;
+  background: url(http://100dayscss.com/codepen/shooting-star.png) center center no-repeat;
+}
+
+.bl_space_star_1 {
+  top: 26px;
+  -webkit-animation: 21s shooting-star 3.4s infinite both;
+          animation: 21s shooting-star 3.4s infinite both;
+}
+
+.bl_space_star_2 {
+  top: 24px;
+  -webkit-animation: 23s shooting-star 20.1s infinite both;
+          animation: 23s shooting-star 20.1s infinite both;
+}
+
+.bl_space_star_3 {
+  top: -4px;
+  -webkit-animation: 23s shooting-star 17.3s infinite both;
+          animation: 23s shooting-star 17.3s infinite both;
+}
+
+.bl_space_star_4 {
+  top: -26px;
+  -webkit-animation: 21s shooting-star 18.2s infinite both;
+          animation: 21s shooting-star 18.2s infinite both;
+}
+
+.bl_space_star_5 {
+  top: -22px;
+  -webkit-animation: 23s shooting-star 23.6s infinite both;
+          animation: 23s shooting-star 23.6s infinite both;
+}
+
+.bl_space_star_6 {
+  top: 33px;
+  -webkit-animation: 22s shooting-star 14.3s infinite both;
+          animation: 22s shooting-star 14.3s infinite both;
+}
+
+@-webkit-keyframes shooting-star {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(20deg);
+            transform: translate3d(0, 0, 0) rotate(20deg);
+  }
+  10%,
+  100% {
+    -webkit-transform: translate3d(451px, 164px, 0) rotate(20deg);
+            transform: translate3d(451px, 164px, 0) rotate(20deg);
+  }
+}
+
+@keyframes shooting-star {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(20deg);
+            transform: translate3d(0, 0, 0) rotate(20deg);
+  }
+  10%,
+  100% {
+    -webkit-transform: translate3d(451px, 164px, 0) rotate(20deg);
+            transform: translate3d(451px, 164px, 0) rotate(20deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

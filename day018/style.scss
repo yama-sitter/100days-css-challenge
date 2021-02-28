@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ly_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bl_space {
+  $numberOfStar: 6;
+
+  width: 280px;
+  height: 280px;
+  border-radius: 9999px;
+  background: linear-gradient(to bottom, #1d4253 0%, #6bb5c4 100%);
+  overflow: hidden;
+
+  &_star {
+    position: absolute;
+    top: 0;
+    left: -120px;
+    width: 120px;
+    height: 2px;
+    background: url(http://100dayscss.com/codepen/shooting-star.png) center
+      center no-repeat;
+
+    @for $i from 1 through $numberOfStar {
+      &_#{$i} {
+        top: (random(100)-30) + px;
+        animation: (random(5) + 20) +
+          s
+          shooting-star
+          (random(250) / 10) +
+          s
+          infinite
+          both;
+      }
+    }
+  }
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(20deg);
+  }
+  10%,
+  100% {
+    transform: translate3d(451px, 164px, 0) rotate(20deg);
+  }
+}
