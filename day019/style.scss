@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: #fff;
+  background: #404556;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl_light {
+  $parent: &;
+
+  & > * {
+    position: absolute;
+  }
+
+  &_bulb {
+    fill: #fff35c;
+    top: 134px;
+    left: 162px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+
+    &:hover {
+      fill: #8c8f99;
+    }
+  }
+
+  &_glow {
+    top: 134px;
+    left: 162px;
+    width: 76px;
+    height: 76px;
+    background: #fff35c;
+    border-radius: 9999px;
+    box-shadow: 0 0 50px 10px #fff35c;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &_bulb:hover ~ &_glow {
+    opacity: 0;
+  }
+
+  &_base {
+    fill: #e5e5e5;
+    top: 233px;
+    left: 184px;
+  }
+}

@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: #fff;
+  background: #404556;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl_light > * {
+  position: absolute;
+}
+
+.bl_light_bulb {
+  fill: #fff35c;
+  top: 134px;
+  left: 162px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.bl_light_bulb:hover {
+  fill: #8c8f99;
+}
+
+.bl_light_glow {
+  top: 134px;
+  left: 162px;
+  width: 76px;
+  height: 76px;
+  background: #fff35c;
+  border-radius: 9999px;
+  -webkit-box-shadow: 0 0 50px 10px #fff35c;
+          box-shadow: 0 0 50px 10px #fff35c;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.bl_light_bulb:hover ~ .bl_light_glow {
+  opacity: 0;
+}
+
+.bl_light_base {
+  fill: #e5e5e5;
+  top: 233px;
+  left: 184px;
+}
+/*# sourceMappingURL=style.css.map */
