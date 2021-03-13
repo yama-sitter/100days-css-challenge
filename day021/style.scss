@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #5ca4ea;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ly_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bl_button {
+  $parent: &;
+
+  position: relative;
+  background: transparent;
+  width: 180px;
+  height: 60px;
+  appearance: none;
+  outline: none;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+
+  & > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &_text {
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &_border {
+    fill: none;
+    stroke-width: 1;
+    fill: #5ca4ea;
+    transition: fill 0.8s ease-in-out;
+
+    &_bgLine {
+      stroke: #91c9ff;
+      transition: fill 0.8s ease-in-out;
+    }
+
+    &_hlLine {
+      fill: transparent;
+      stroke: #fff;
+      stroke-dasharray: 40 480;
+      stroke-dashoffset: 40;
+      transition: stroke-dashoffset 0.8s ease-in-out;
+    }
+  }
+
+  &:hover {
+    #{$parent}_border {
+      &_bgLine {
+        fill: #4f95da;
+      }
+
+      &_hlLine {
+        stroke-dashoffset: -480;
+      }
+    }
+  }
+}
