@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #de4738;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl_pixel {
+  $gridColumnNumber: 20;
+
+  display: grid;
+  grid-template-columns: repeat($gridColumnNumber, 1fr);
+
+  &_item {
+    display: inline-block;
+
+    & > input[type="checkbox"] {
+      display: none;
+
+      &:checked ~ label {
+        background: #fff;
+        border-color: #fff;
+      }
+    }
+
+    &_block {
+      display: block;
+      box-sizing: border-box;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #e24e3f;
+      cursor: pointer;
+
+      &:hover {
+        background: #ec5142;
+        border-color: #e24e3f;
+      }
+    }
+  }
+}

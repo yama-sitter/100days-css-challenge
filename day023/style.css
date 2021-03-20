@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #de4738;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl_pixel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[20];
+      grid-template-columns: repeat(20, 1fr);
+}
+
+.bl_pixel_item {
+  display: inline-block;
+}
+
+.bl_pixel_item > input[type="checkbox"] {
+  display: none;
+}
+
+.bl_pixel_item > input[type="checkbox"]:checked ~ label {
+  background: #fff;
+  border-color: #fff;
+}
+
+.bl_pixel_item_block {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e24e3f;
+  cursor: pointer;
+}
+
+.bl_pixel_item_block:hover {
+  background: #ec5142;
+  border-color: #e24e3f;
+}
+/*# sourceMappingURL=style.css.map */
