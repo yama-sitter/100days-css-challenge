@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #e47512;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ly_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.bl_cube {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-100px) rotateX(70deg) rotateZ(-45deg);
+          transform: translateZ(-100px) rotateX(70deg) rotateZ(-45deg);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.bl_cube:hover {
+  -webkit-transform: translateZ(-100px) rotateX(-120deg) rotateZ(135deg);
+          transform: translateZ(-100px) rotateX(-120deg) rotateZ(135deg);
+}
+
+.bl_cube_side {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.bl_cube_side_front {
+  -webkit-transform: rotateY(0deg) translateZ(100px);
+          transform: rotateY(0deg) translateZ(100px);
+  background: #fff;
+}
+
+.bl_cube_side_back {
+  -webkit-transform: rotateX(180deg) translateZ(100px);
+          transform: rotateX(180deg) translateZ(100px);
+  background: #ccc;
+}
+
+.bl_cube_side_right {
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+          transform: rotateY(90deg) translateZ(100px);
+  background: #ddd;
+}
+
+.bl_cube_side_left {
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+          transform: rotateY(-90deg) translateZ(100px);
+  background: #eee;
+}
+
+.bl_cube_side_top {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+          transform: rotateX(90deg) translateZ(100px);
+  background: #eee;
+}
+
+.bl_cube_side_bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+          transform: rotateX(-90deg) translateZ(100px);
+  background: #ddd;
+}
+/*# sourceMappingURL=style.css.map */

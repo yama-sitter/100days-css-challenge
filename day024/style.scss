@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #e47512;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ly_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+}
+
+.bl_cube {
+  transform-style: preserve-3d;
+  transform: translateZ(-100px) rotateX(70deg) rotateZ(-45deg);
+  transition: all 1s ease-in-out;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateZ(-100px) rotateX(-120deg) rotateZ(135deg);
+  }
+
+  &_side {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+    &_front {
+      transform: rotateY(0deg) translateZ(100px);
+      background: #fff;
+    }
+    &_back {
+      transform: rotateX(180deg) translateZ(100px);
+      background: #ccc;
+    }
+    &_right {
+      transform: rotateY(90deg) translateZ(100px);
+      background: #ddd;
+    }
+    &_left {
+      transform: rotateY(-90deg) translateZ(100px);
+      background: #eee;
+    }
+    &_top {
+      transform: rotateX(90deg) translateZ(100px);
+      background: #eee;
+    }
+    &_bottom {
+      transform: rotateX(-90deg) translateZ(100px);
+      background: #ddd;
+    }
+  }
+}
