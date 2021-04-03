@@ -1,0 +1,28 @@
+<!-- index=50 -->
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="style.css")
+    title 100days CSS Challenge
+  body
+    .ly_frame
+      .bl_counter
+        input.bl_counter_button(type="checkbox" id="button")
+        label.bl_counter_buttonIcon(for="button")
+          .bl_counter_buttonIcon_pause
+          .bl_counter_buttonIcon_play
+        .bl_counter_display
+          .bl_counter_display_number.bl_counter_display_thousands
+            each c in [...Array(10).keys()]
+              span #{c}
+          .bl_counter_display_number.bl_counter_display_hundreds
+            each c in [...Array(10).keys()]
+              span #{c}
+          .bl_counter_display_number.bl_counter_display_tens
+            each c in [...Array(10).keys()]
+              span #{c}
+          .bl_counter_display_number.bl_counter_display_units
+            each c in [...Array(10).keys()]
+              span #{c}

@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #313c46;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl_counter {
+  position: absolute;
+  top: 180px;
+  left: 150px;
+}
+
+.bl_counter_button {
+  display: none;
+}
+
+.bl_counter_button:checked ~ .bl_counter_buttonIcon .bl_counter_buttonIcon_pause {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+
+.bl_counter_button:checked ~ .bl_counter_buttonIcon .bl_counter_buttonIcon_play {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.bl_counter_button:checked ~ .bl_counter_display > * {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.bl_counter_buttonIcon {
+  position: absolute;
+  width: 16px;
+  height: 20px;
+  top: 60px;
+  left: 42px;
+  cursor: pointer;
+}
+
+.bl_counter_buttonIcon > * {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.bl_counter_buttonIcon_pause {
+  position: absolute;
+  width: 16px;
+  height: 20px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.bl_counter_buttonIcon_pause:before, .bl_counter_buttonIcon_pause:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 5px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+.bl_counter_buttonIcon_pause:after {
+  left: initial;
+  right: 0;
+}
+
+.bl_counter_buttonIcon_play {
+  position: absolute;
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent #fff;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+
+.bl_counter_display {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+  padding: 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bl_counter_display_number {
+  text-align: center;
+}
+
+.bl_counter_display_number > span {
+  display: inline-block;
+  height: 40px;
+  width: 22px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #478bb8;
+}
+
+.bl_counter_display_thousands {
+  -webkit-animation: count 10000s steps(1) infinite;
+          animation: count 10000s steps(1) infinite;
+}
+
+.bl_counter_display_hundreds {
+  -webkit-animation: count 1000s steps(1) infinite;
+          animation: count 1000s steps(1) infinite;
+}
+
+.bl_counter_display_tens {
+  -webkit-animation: count 100s steps(1) infinite;
+          animation: count 100s steps(1) infinite;
+}
+
+.bl_counter_display_units {
+  -webkit-animation: count 10s steps(1) infinite;
+          animation: count 10s steps(1) infinite;
+}
+
+@-webkit-keyframes count {
+  00% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  10% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  20% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  30% {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+  40% {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+  50% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  60% {
+    -webkit-transform: translateY(-240px);
+            transform: translateY(-240px);
+  }
+  70% {
+    -webkit-transform: translateY(-280px);
+            transform: translateY(-280px);
+  }
+  80% {
+    -webkit-transform: translateY(-320px);
+            transform: translateY(-320px);
+  }
+  90% {
+    -webkit-transform: translateY(-360px);
+            transform: translateY(-360px);
+  }
+}
+
+@keyframes count {
+  00% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  10% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  20% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  30% {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+  40% {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+  50% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  60% {
+    -webkit-transform: translateY(-240px);
+            transform: translateY(-240px);
+  }
+  70% {
+    -webkit-transform: translateY(-280px);
+            transform: translateY(-280px);
+  }
+  80% {
+    -webkit-transform: translateY(-320px);
+            transform: translateY(-320px);
+  }
+  90% {
+    -webkit-transform: translateY(-360px);
+            transform: translateY(-360px);
+  }
+}
+/*# sourceMappingURL=style.css.map */

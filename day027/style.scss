@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #313c46;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl_counter {
+  $parent: &;
+
+  position: absolute;
+  top: 180px;
+  left: 150px;
+
+  &_button {
+    display: none;
+
+    &:checked ~ #{$parent}_buttonIcon {
+      #{$parent}_buttonIcon_pause {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      #{$parent}_buttonIcon_play {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    &:checked ~ #{$parent}_display > * {
+      animation-play-state: paused;
+    }
+  }
+
+  &_buttonIcon {
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    top: 60px;
+    left: 42px;
+    cursor: pointer;
+
+    & > * {
+      transition: all 0.3s ease-in-out;
+    }
+
+    &_pause {
+      position: absolute;
+      width: 16px;
+      height: 20px;
+      transform: scale(1);
+      opacity: 1;
+
+      &:before,
+      &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 5px;
+        height: 20px;
+        top: 0;
+        left: 0;
+        background: #fff;
+      }
+
+      &:after {
+        left: initial;
+        right: 0;
+      }
+    }
+
+    &_play {
+      position: absolute;
+      border-style: solid;
+      border-width: 10px 0 10px 16px;
+      border-color: transparent transparent transparent #fff;
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+
+  &_display {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    padding: 0 6px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+
+    &_number {
+      text-align: center;
+
+      & > span {
+        display: inline-block;
+        height: 40px;
+        width: 22px;
+        font-size: 30px;
+        font-weight: 400;
+        color: #478bb8;
+      }
+    }
+
+    &_thousands {
+      animation: count 10000s steps(1) infinite;
+    }
+
+    &_hundreds {
+      animation: count 1000s steps(1) infinite;
+    }
+
+    &_tens {
+      animation: count 100s steps(1) infinite;
+    }
+
+    &_units {
+      animation: count 10s steps(1) infinite;
+    }
+  }
+}
+
+@keyframes count {
+  @for $i from 0 through 9 {
+    #{$i}0% {
+      transform: translateY(($i * -40) + px);
+    }
+  }
+}
