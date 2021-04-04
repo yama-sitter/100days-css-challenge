@@ -1,0 +1,2845 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #27ae60;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl_circle_ring {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 160px;
+  left: 160px;
+}
+
+.bl_circle_ring_dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 40px;
+  left: 40px;
+}
+
+.bl_circle_ring_dot_fill {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50px;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_fill {
+  -webkit-animation: pulsate 2s ease-in-out 0s alternate infinite both;
+          animation: pulsate 2s ease-in-out 0s alternate infinite both;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_0 {
+  -webkit-transform: translate3d(0, -29px, 0) rotate(-30deg);
+          transform: translate3d(0, -29px, 0) rotate(-30deg);
+  -webkit-transform-origin: 0 29px;
+          transform-origin: 0 29px;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_1 {
+  -webkit-transform: translate3d(0, -29px, 0) rotate(0deg);
+          transform: translate3d(0, -29px, 0) rotate(0deg);
+  -webkit-transform-origin: 0 29px;
+          transform-origin: 0 29px;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_2 {
+  -webkit-transform: translate3d(0, -29px, 0) rotate(30deg);
+          transform: translate3d(0, -29px, 0) rotate(30deg);
+  -webkit-transform-origin: 0 29px;
+          transform-origin: 0 29px;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_3 {
+  -webkit-transform: translate3d(0, -29px, 0) rotate(60deg);
+          transform: translate3d(0, -29px, 0) rotate(60deg);
+  -webkit-transform-origin: 0 29px;
+          transform-origin: 0 29px;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_4 {
+  -webkit-transform: translate3d(0, -29px, 0) rotate(90deg);
+          transform: translate3d(0, -29px, 0) rotate(90deg);
+  -webkit-transform-origin: 0 29px;
+          transform-origin: 0 29px;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_5 {
+  -webkit-transform: translate3d(0, -29px, 0) rotate(120deg);
+          transform: translate3d(0, -29px, 0) rotate(120deg);
+  -webkit-transform-origin: 0 29px;
+          transform-origin: 0 29px;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_6 {
+  -webkit-transform: translate3d(0, -29px, 0) rotate(150deg);
+          transform: translate3d(0, -29px, 0) rotate(150deg);
+  -webkit-transform-origin: 0 29px;
+          transform-origin: 0 29px;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_7 {
+  -webkit-transform: translate3d(0, -29px, 0) rotate(180deg);
+          transform: translate3d(0, -29px, 0) rotate(180deg);
+  -webkit-transform-origin: 0 29px;
+          transform-origin: 0 29px;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_8 {
+  -webkit-transform: translate3d(0, -29px, 0) rotate(210deg);
+          transform: translate3d(0, -29px, 0) rotate(210deg);
+  -webkit-transform-origin: 0 29px;
+          transform-origin: 0 29px;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_9 {
+  -webkit-transform: translate3d(0, -29px, 0) rotate(240deg);
+          transform: translate3d(0, -29px, 0) rotate(240deg);
+  -webkit-transform-origin: 0 29px;
+          transform-origin: 0 29px;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_10 {
+  -webkit-transform: translate3d(0, -29px, 0) rotate(270deg);
+          transform: translate3d(0, -29px, 0) rotate(270deg);
+  -webkit-transform-origin: 0 29px;
+          transform-origin: 0 29px;
+}
+
+.bl_circle .bl_circle_ring_0 .bl_circle_ring_dot_11 {
+  -webkit-transform: translate3d(0, -29px, 0) rotate(300deg);
+          transform: translate3d(0, -29px, 0) rotate(300deg);
+  -webkit-transform-origin: 0 29px;
+          transform-origin: 0 29px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_fill {
+  -webkit-animation: pulsate 2s ease-in-out 0.33333s alternate infinite both;
+          animation: pulsate 2s ease-in-out 0.33333s alternate infinite both;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_0 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(-20deg);
+          transform: translate3d(0, -40px, 0) rotate(-20deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_1 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(0deg);
+          transform: translate3d(0, -40px, 0) rotate(0deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_2 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(20deg);
+          transform: translate3d(0, -40px, 0) rotate(20deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_3 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(40deg);
+          transform: translate3d(0, -40px, 0) rotate(40deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_4 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(60deg);
+          transform: translate3d(0, -40px, 0) rotate(60deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_5 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(80deg);
+          transform: translate3d(0, -40px, 0) rotate(80deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_6 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(100deg);
+          transform: translate3d(0, -40px, 0) rotate(100deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_7 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(120deg);
+          transform: translate3d(0, -40px, 0) rotate(120deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_8 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(140deg);
+          transform: translate3d(0, -40px, 0) rotate(140deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_9 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(160deg);
+          transform: translate3d(0, -40px, 0) rotate(160deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_10 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(180deg);
+          transform: translate3d(0, -40px, 0) rotate(180deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_11 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(200deg);
+          transform: translate3d(0, -40px, 0) rotate(200deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_12 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(220deg);
+          transform: translate3d(0, -40px, 0) rotate(220deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_13 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(240deg);
+          transform: translate3d(0, -40px, 0) rotate(240deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_14 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(260deg);
+          transform: translate3d(0, -40px, 0) rotate(260deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_15 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(280deg);
+          transform: translate3d(0, -40px, 0) rotate(280deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_16 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(300deg);
+          transform: translate3d(0, -40px, 0) rotate(300deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_1 .bl_circle_ring_dot_17 {
+  -webkit-transform: translate3d(0, -40px, 0) rotate(320deg);
+          transform: translate3d(0, -40px, 0) rotate(320deg);
+  -webkit-transform-origin: 0 40px;
+          transform-origin: 0 40px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_fill {
+  -webkit-animation: pulsate 2s ease-in-out 0.66667s alternate infinite both;
+          animation: pulsate 2s ease-in-out 0.66667s alternate infinite both;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_0 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(-15deg);
+          transform: translate3d(0, -51px, 0) rotate(-15deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_1 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(0deg);
+          transform: translate3d(0, -51px, 0) rotate(0deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_2 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(15deg);
+          transform: translate3d(0, -51px, 0) rotate(15deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_3 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(30deg);
+          transform: translate3d(0, -51px, 0) rotate(30deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_4 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(45deg);
+          transform: translate3d(0, -51px, 0) rotate(45deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_5 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(60deg);
+          transform: translate3d(0, -51px, 0) rotate(60deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_6 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(75deg);
+          transform: translate3d(0, -51px, 0) rotate(75deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_7 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(90deg);
+          transform: translate3d(0, -51px, 0) rotate(90deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_8 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(105deg);
+          transform: translate3d(0, -51px, 0) rotate(105deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_9 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(120deg);
+          transform: translate3d(0, -51px, 0) rotate(120deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_10 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(135deg);
+          transform: translate3d(0, -51px, 0) rotate(135deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_11 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(150deg);
+          transform: translate3d(0, -51px, 0) rotate(150deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_12 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(165deg);
+          transform: translate3d(0, -51px, 0) rotate(165deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_13 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(180deg);
+          transform: translate3d(0, -51px, 0) rotate(180deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_14 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(195deg);
+          transform: translate3d(0, -51px, 0) rotate(195deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_15 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(210deg);
+          transform: translate3d(0, -51px, 0) rotate(210deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_16 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(225deg);
+          transform: translate3d(0, -51px, 0) rotate(225deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_17 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(240deg);
+          transform: translate3d(0, -51px, 0) rotate(240deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_18 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(255deg);
+          transform: translate3d(0, -51px, 0) rotate(255deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_19 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(270deg);
+          transform: translate3d(0, -51px, 0) rotate(270deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_20 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(285deg);
+          transform: translate3d(0, -51px, 0) rotate(285deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_21 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(300deg);
+          transform: translate3d(0, -51px, 0) rotate(300deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_22 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(315deg);
+          transform: translate3d(0, -51px, 0) rotate(315deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_2 .bl_circle_ring_dot_23 {
+  -webkit-transform: translate3d(0, -51px, 0) rotate(330deg);
+          transform: translate3d(0, -51px, 0) rotate(330deg);
+  -webkit-transform-origin: 0 51px;
+          transform-origin: 0 51px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_fill {
+  -webkit-animation: pulsate 2s ease-in-out 1s alternate infinite both;
+          animation: pulsate 2s ease-in-out 1s alternate infinite both;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_0 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(-12deg);
+          transform: translate3d(0, -62px, 0) rotate(-12deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_1 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(0deg);
+          transform: translate3d(0, -62px, 0) rotate(0deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_2 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(12deg);
+          transform: translate3d(0, -62px, 0) rotate(12deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_3 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(24deg);
+          transform: translate3d(0, -62px, 0) rotate(24deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_4 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(36deg);
+          transform: translate3d(0, -62px, 0) rotate(36deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_5 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(48deg);
+          transform: translate3d(0, -62px, 0) rotate(48deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_6 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(60deg);
+          transform: translate3d(0, -62px, 0) rotate(60deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_7 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(72deg);
+          transform: translate3d(0, -62px, 0) rotate(72deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_8 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(84deg);
+          transform: translate3d(0, -62px, 0) rotate(84deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_9 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(96deg);
+          transform: translate3d(0, -62px, 0) rotate(96deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_10 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(108deg);
+          transform: translate3d(0, -62px, 0) rotate(108deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_11 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(120deg);
+          transform: translate3d(0, -62px, 0) rotate(120deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_12 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(132deg);
+          transform: translate3d(0, -62px, 0) rotate(132deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_13 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(144deg);
+          transform: translate3d(0, -62px, 0) rotate(144deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_14 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(156deg);
+          transform: translate3d(0, -62px, 0) rotate(156deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_15 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(168deg);
+          transform: translate3d(0, -62px, 0) rotate(168deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_16 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(180deg);
+          transform: translate3d(0, -62px, 0) rotate(180deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_17 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(192deg);
+          transform: translate3d(0, -62px, 0) rotate(192deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_18 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(204deg);
+          transform: translate3d(0, -62px, 0) rotate(204deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_19 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(216deg);
+          transform: translate3d(0, -62px, 0) rotate(216deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_20 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(228deg);
+          transform: translate3d(0, -62px, 0) rotate(228deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_21 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(240deg);
+          transform: translate3d(0, -62px, 0) rotate(240deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_22 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(252deg);
+          transform: translate3d(0, -62px, 0) rotate(252deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_23 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(264deg);
+          transform: translate3d(0, -62px, 0) rotate(264deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_24 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(276deg);
+          transform: translate3d(0, -62px, 0) rotate(276deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_25 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(288deg);
+          transform: translate3d(0, -62px, 0) rotate(288deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_26 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(300deg);
+          transform: translate3d(0, -62px, 0) rotate(300deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_27 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(312deg);
+          transform: translate3d(0, -62px, 0) rotate(312deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_28 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(324deg);
+          transform: translate3d(0, -62px, 0) rotate(324deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_3 .bl_circle_ring_dot_29 {
+  -webkit-transform: translate3d(0, -62px, 0) rotate(336deg);
+          transform: translate3d(0, -62px, 0) rotate(336deg);
+  -webkit-transform-origin: 0 62px;
+          transform-origin: 0 62px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_fill {
+  -webkit-animation: pulsate 2s ease-in-out 1.33333s alternate infinite both;
+          animation: pulsate 2s ease-in-out 1.33333s alternate infinite both;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_0 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(-10deg);
+          transform: translate3d(0, -73px, 0) rotate(-10deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_1 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(0deg);
+          transform: translate3d(0, -73px, 0) rotate(0deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_2 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(10deg);
+          transform: translate3d(0, -73px, 0) rotate(10deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_3 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(20deg);
+          transform: translate3d(0, -73px, 0) rotate(20deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_4 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(30deg);
+          transform: translate3d(0, -73px, 0) rotate(30deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_5 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(40deg);
+          transform: translate3d(0, -73px, 0) rotate(40deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_6 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(50deg);
+          transform: translate3d(0, -73px, 0) rotate(50deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_7 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(60deg);
+          transform: translate3d(0, -73px, 0) rotate(60deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_8 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(70deg);
+          transform: translate3d(0, -73px, 0) rotate(70deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_9 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(80deg);
+          transform: translate3d(0, -73px, 0) rotate(80deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_10 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(90deg);
+          transform: translate3d(0, -73px, 0) rotate(90deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_11 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(100deg);
+          transform: translate3d(0, -73px, 0) rotate(100deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_12 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(110deg);
+          transform: translate3d(0, -73px, 0) rotate(110deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_13 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(120deg);
+          transform: translate3d(0, -73px, 0) rotate(120deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_14 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(130deg);
+          transform: translate3d(0, -73px, 0) rotate(130deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_15 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(140deg);
+          transform: translate3d(0, -73px, 0) rotate(140deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_16 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(150deg);
+          transform: translate3d(0, -73px, 0) rotate(150deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_17 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(160deg);
+          transform: translate3d(0, -73px, 0) rotate(160deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_18 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(170deg);
+          transform: translate3d(0, -73px, 0) rotate(170deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_19 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(180deg);
+          transform: translate3d(0, -73px, 0) rotate(180deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_20 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(190deg);
+          transform: translate3d(0, -73px, 0) rotate(190deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_21 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(200deg);
+          transform: translate3d(0, -73px, 0) rotate(200deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_22 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(210deg);
+          transform: translate3d(0, -73px, 0) rotate(210deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_23 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(220deg);
+          transform: translate3d(0, -73px, 0) rotate(220deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_24 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(230deg);
+          transform: translate3d(0, -73px, 0) rotate(230deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_25 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(240deg);
+          transform: translate3d(0, -73px, 0) rotate(240deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_26 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(250deg);
+          transform: translate3d(0, -73px, 0) rotate(250deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_27 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(260deg);
+          transform: translate3d(0, -73px, 0) rotate(260deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_28 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(270deg);
+          transform: translate3d(0, -73px, 0) rotate(270deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_29 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(280deg);
+          transform: translate3d(0, -73px, 0) rotate(280deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_30 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(290deg);
+          transform: translate3d(0, -73px, 0) rotate(290deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_31 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(300deg);
+          transform: translate3d(0, -73px, 0) rotate(300deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_32 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(310deg);
+          transform: translate3d(0, -73px, 0) rotate(310deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_33 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(320deg);
+          transform: translate3d(0, -73px, 0) rotate(320deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_34 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(330deg);
+          transform: translate3d(0, -73px, 0) rotate(330deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_4 .bl_circle_ring_dot_35 {
+  -webkit-transform: translate3d(0, -73px, 0) rotate(340deg);
+          transform: translate3d(0, -73px, 0) rotate(340deg);
+  -webkit-transform-origin: 0 73px;
+          transform-origin: 0 73px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_fill {
+  -webkit-animation: pulsate 2s ease-in-out 1.66667s alternate infinite both;
+          animation: pulsate 2s ease-in-out 1.66667s alternate infinite both;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_0 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(-8.57143deg);
+          transform: translate3d(0, -84px, 0) rotate(-8.57143deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_1 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(0deg);
+          transform: translate3d(0, -84px, 0) rotate(0deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_2 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(8.57143deg);
+          transform: translate3d(0, -84px, 0) rotate(8.57143deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_3 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(17.14286deg);
+          transform: translate3d(0, -84px, 0) rotate(17.14286deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_4 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(25.71429deg);
+          transform: translate3d(0, -84px, 0) rotate(25.71429deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_5 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(34.28571deg);
+          transform: translate3d(0, -84px, 0) rotate(34.28571deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_6 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(42.85714deg);
+          transform: translate3d(0, -84px, 0) rotate(42.85714deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_7 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(51.42857deg);
+          transform: translate3d(0, -84px, 0) rotate(51.42857deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_8 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(60deg);
+          transform: translate3d(0, -84px, 0) rotate(60deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_9 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(68.57143deg);
+          transform: translate3d(0, -84px, 0) rotate(68.57143deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_10 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(77.14286deg);
+          transform: translate3d(0, -84px, 0) rotate(77.14286deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_11 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(85.71429deg);
+          transform: translate3d(0, -84px, 0) rotate(85.71429deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_12 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(94.28571deg);
+          transform: translate3d(0, -84px, 0) rotate(94.28571deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_13 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(102.85714deg);
+          transform: translate3d(0, -84px, 0) rotate(102.85714deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_14 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(111.42857deg);
+          transform: translate3d(0, -84px, 0) rotate(111.42857deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_15 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(120deg);
+          transform: translate3d(0, -84px, 0) rotate(120deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_16 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(128.57143deg);
+          transform: translate3d(0, -84px, 0) rotate(128.57143deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_17 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(137.14286deg);
+          transform: translate3d(0, -84px, 0) rotate(137.14286deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_18 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(145.71429deg);
+          transform: translate3d(0, -84px, 0) rotate(145.71429deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_19 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(154.28571deg);
+          transform: translate3d(0, -84px, 0) rotate(154.28571deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_20 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(162.85714deg);
+          transform: translate3d(0, -84px, 0) rotate(162.85714deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_21 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(171.42857deg);
+          transform: translate3d(0, -84px, 0) rotate(171.42857deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_22 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(180deg);
+          transform: translate3d(0, -84px, 0) rotate(180deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_23 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(188.57143deg);
+          transform: translate3d(0, -84px, 0) rotate(188.57143deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_24 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(197.14286deg);
+          transform: translate3d(0, -84px, 0) rotate(197.14286deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_25 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(205.71429deg);
+          transform: translate3d(0, -84px, 0) rotate(205.71429deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_26 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(214.28571deg);
+          transform: translate3d(0, -84px, 0) rotate(214.28571deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_27 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(222.85714deg);
+          transform: translate3d(0, -84px, 0) rotate(222.85714deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_28 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(231.42857deg);
+          transform: translate3d(0, -84px, 0) rotate(231.42857deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_29 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(240deg);
+          transform: translate3d(0, -84px, 0) rotate(240deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_30 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(248.57143deg);
+          transform: translate3d(0, -84px, 0) rotate(248.57143deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_31 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(257.14286deg);
+          transform: translate3d(0, -84px, 0) rotate(257.14286deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_32 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(265.71429deg);
+          transform: translate3d(0, -84px, 0) rotate(265.71429deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_33 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(274.28571deg);
+          transform: translate3d(0, -84px, 0) rotate(274.28571deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_34 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(282.85714deg);
+          transform: translate3d(0, -84px, 0) rotate(282.85714deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_35 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(291.42857deg);
+          transform: translate3d(0, -84px, 0) rotate(291.42857deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_36 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(300deg);
+          transform: translate3d(0, -84px, 0) rotate(300deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_37 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(308.57143deg);
+          transform: translate3d(0, -84px, 0) rotate(308.57143deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_38 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(317.14286deg);
+          transform: translate3d(0, -84px, 0) rotate(317.14286deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_39 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(325.71429deg);
+          transform: translate3d(0, -84px, 0) rotate(325.71429deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_40 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(334.28571deg);
+          transform: translate3d(0, -84px, 0) rotate(334.28571deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_5 .bl_circle_ring_dot_41 {
+  -webkit-transform: translate3d(0, -84px, 0) rotate(342.85714deg);
+          transform: translate3d(0, -84px, 0) rotate(342.85714deg);
+  -webkit-transform-origin: 0 84px;
+          transform-origin: 0 84px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_fill {
+  -webkit-animation: pulsate 2s ease-in-out 2s alternate infinite both;
+          animation: pulsate 2s ease-in-out 2s alternate infinite both;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_0 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(-7.5deg);
+          transform: translate3d(0, -95px, 0) rotate(-7.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_1 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(0deg);
+          transform: translate3d(0, -95px, 0) rotate(0deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_2 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(7.5deg);
+          transform: translate3d(0, -95px, 0) rotate(7.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_3 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(15deg);
+          transform: translate3d(0, -95px, 0) rotate(15deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_4 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(22.5deg);
+          transform: translate3d(0, -95px, 0) rotate(22.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_5 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(30deg);
+          transform: translate3d(0, -95px, 0) rotate(30deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_6 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(37.5deg);
+          transform: translate3d(0, -95px, 0) rotate(37.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_7 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(45deg);
+          transform: translate3d(0, -95px, 0) rotate(45deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_8 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(52.5deg);
+          transform: translate3d(0, -95px, 0) rotate(52.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_9 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(60deg);
+          transform: translate3d(0, -95px, 0) rotate(60deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_10 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(67.5deg);
+          transform: translate3d(0, -95px, 0) rotate(67.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_11 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(75deg);
+          transform: translate3d(0, -95px, 0) rotate(75deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_12 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(82.5deg);
+          transform: translate3d(0, -95px, 0) rotate(82.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_13 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(90deg);
+          transform: translate3d(0, -95px, 0) rotate(90deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_14 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(97.5deg);
+          transform: translate3d(0, -95px, 0) rotate(97.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_15 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(105deg);
+          transform: translate3d(0, -95px, 0) rotate(105deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_16 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(112.5deg);
+          transform: translate3d(0, -95px, 0) rotate(112.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_17 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(120deg);
+          transform: translate3d(0, -95px, 0) rotate(120deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_18 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(127.5deg);
+          transform: translate3d(0, -95px, 0) rotate(127.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_19 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(135deg);
+          transform: translate3d(0, -95px, 0) rotate(135deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_20 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(142.5deg);
+          transform: translate3d(0, -95px, 0) rotate(142.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_21 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(150deg);
+          transform: translate3d(0, -95px, 0) rotate(150deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_22 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(157.5deg);
+          transform: translate3d(0, -95px, 0) rotate(157.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_23 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(165deg);
+          transform: translate3d(0, -95px, 0) rotate(165deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_24 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(172.5deg);
+          transform: translate3d(0, -95px, 0) rotate(172.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_25 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(180deg);
+          transform: translate3d(0, -95px, 0) rotate(180deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_26 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(187.5deg);
+          transform: translate3d(0, -95px, 0) rotate(187.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_27 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(195deg);
+          transform: translate3d(0, -95px, 0) rotate(195deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_28 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(202.5deg);
+          transform: translate3d(0, -95px, 0) rotate(202.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_29 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(210deg);
+          transform: translate3d(0, -95px, 0) rotate(210deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_30 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(217.5deg);
+          transform: translate3d(0, -95px, 0) rotate(217.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_31 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(225deg);
+          transform: translate3d(0, -95px, 0) rotate(225deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_32 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(232.5deg);
+          transform: translate3d(0, -95px, 0) rotate(232.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_33 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(240deg);
+          transform: translate3d(0, -95px, 0) rotate(240deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_34 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(247.5deg);
+          transform: translate3d(0, -95px, 0) rotate(247.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_35 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(255deg);
+          transform: translate3d(0, -95px, 0) rotate(255deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_36 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(262.5deg);
+          transform: translate3d(0, -95px, 0) rotate(262.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_37 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(270deg);
+          transform: translate3d(0, -95px, 0) rotate(270deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_38 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(277.5deg);
+          transform: translate3d(0, -95px, 0) rotate(277.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_39 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(285deg);
+          transform: translate3d(0, -95px, 0) rotate(285deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_40 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(292.5deg);
+          transform: translate3d(0, -95px, 0) rotate(292.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_41 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(300deg);
+          transform: translate3d(0, -95px, 0) rotate(300deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_42 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(307.5deg);
+          transform: translate3d(0, -95px, 0) rotate(307.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_43 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(315deg);
+          transform: translate3d(0, -95px, 0) rotate(315deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_44 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(322.5deg);
+          transform: translate3d(0, -95px, 0) rotate(322.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_45 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(330deg);
+          transform: translate3d(0, -95px, 0) rotate(330deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_46 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(337.5deg);
+          transform: translate3d(0, -95px, 0) rotate(337.5deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_6 .bl_circle_ring_dot_47 {
+  -webkit-transform: translate3d(0, -95px, 0) rotate(345deg);
+          transform: translate3d(0, -95px, 0) rotate(345deg);
+  -webkit-transform-origin: 0 95px;
+          transform-origin: 0 95px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_fill {
+  -webkit-animation: pulsate 2s ease-in-out 2.33333s alternate infinite both;
+          animation: pulsate 2s ease-in-out 2.33333s alternate infinite both;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_0 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(-6.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(-6.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_1 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(0deg);
+          transform: translate3d(0, -106px, 0) rotate(0deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_2 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(6.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(6.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_3 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(13.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(13.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_4 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(20deg);
+          transform: translate3d(0, -106px, 0) rotate(20deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_5 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(26.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(26.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_6 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(33.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(33.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_7 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(40deg);
+          transform: translate3d(0, -106px, 0) rotate(40deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_8 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(46.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(46.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_9 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(53.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(53.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_10 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(60deg);
+          transform: translate3d(0, -106px, 0) rotate(60deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_11 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(66.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(66.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_12 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(73.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(73.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_13 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(80deg);
+          transform: translate3d(0, -106px, 0) rotate(80deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_14 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(86.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(86.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_15 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(93.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(93.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_16 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(100deg);
+          transform: translate3d(0, -106px, 0) rotate(100deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_17 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(106.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(106.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_18 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(113.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(113.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_19 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(120deg);
+          transform: translate3d(0, -106px, 0) rotate(120deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_20 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(126.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(126.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_21 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(133.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(133.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_22 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(140deg);
+          transform: translate3d(0, -106px, 0) rotate(140deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_23 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(146.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(146.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_24 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(153.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(153.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_25 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(160deg);
+          transform: translate3d(0, -106px, 0) rotate(160deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_26 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(166.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(166.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_27 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(173.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(173.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_28 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(180deg);
+          transform: translate3d(0, -106px, 0) rotate(180deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_29 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(186.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(186.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_30 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(193.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(193.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_31 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(200deg);
+          transform: translate3d(0, -106px, 0) rotate(200deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_32 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(206.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(206.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_33 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(213.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(213.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_34 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(220deg);
+          transform: translate3d(0, -106px, 0) rotate(220deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_35 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(226.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(226.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_36 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(233.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(233.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_37 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(240deg);
+          transform: translate3d(0, -106px, 0) rotate(240deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_38 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(246.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(246.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_39 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(253.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(253.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_40 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(260deg);
+          transform: translate3d(0, -106px, 0) rotate(260deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_41 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(266.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(266.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_42 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(273.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(273.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_43 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(280deg);
+          transform: translate3d(0, -106px, 0) rotate(280deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_44 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(286.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(286.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_45 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(293.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(293.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_46 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(300deg);
+          transform: translate3d(0, -106px, 0) rotate(300deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_47 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(306.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(306.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_48 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(313.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(313.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_49 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(320deg);
+          transform: translate3d(0, -106px, 0) rotate(320deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_50 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(326.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(326.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_51 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(333.33333deg);
+          transform: translate3d(0, -106px, 0) rotate(333.33333deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_52 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(340deg);
+          transform: translate3d(0, -106px, 0) rotate(340deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_7 .bl_circle_ring_dot_53 {
+  -webkit-transform: translate3d(0, -106px, 0) rotate(346.66667deg);
+          transform: translate3d(0, -106px, 0) rotate(346.66667deg);
+  -webkit-transform-origin: 0 106px;
+          transform-origin: 0 106px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_fill {
+  -webkit-animation: pulsate 2s ease-in-out 2.66667s alternate infinite both;
+          animation: pulsate 2s ease-in-out 2.66667s alternate infinite both;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_0 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(-6deg);
+          transform: translate3d(0, -117px, 0) rotate(-6deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_1 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(0deg);
+          transform: translate3d(0, -117px, 0) rotate(0deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_2 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(6deg);
+          transform: translate3d(0, -117px, 0) rotate(6deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_3 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(12deg);
+          transform: translate3d(0, -117px, 0) rotate(12deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_4 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(18deg);
+          transform: translate3d(0, -117px, 0) rotate(18deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_5 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(24deg);
+          transform: translate3d(0, -117px, 0) rotate(24deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_6 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(30deg);
+          transform: translate3d(0, -117px, 0) rotate(30deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_7 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(36deg);
+          transform: translate3d(0, -117px, 0) rotate(36deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_8 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(42deg);
+          transform: translate3d(0, -117px, 0) rotate(42deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_9 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(48deg);
+          transform: translate3d(0, -117px, 0) rotate(48deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_10 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(54deg);
+          transform: translate3d(0, -117px, 0) rotate(54deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_11 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(60deg);
+          transform: translate3d(0, -117px, 0) rotate(60deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_12 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(66deg);
+          transform: translate3d(0, -117px, 0) rotate(66deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_13 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(72deg);
+          transform: translate3d(0, -117px, 0) rotate(72deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_14 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(78deg);
+          transform: translate3d(0, -117px, 0) rotate(78deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_15 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(84deg);
+          transform: translate3d(0, -117px, 0) rotate(84deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_16 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(90deg);
+          transform: translate3d(0, -117px, 0) rotate(90deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_17 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(96deg);
+          transform: translate3d(0, -117px, 0) rotate(96deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_18 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(102deg);
+          transform: translate3d(0, -117px, 0) rotate(102deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_19 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(108deg);
+          transform: translate3d(0, -117px, 0) rotate(108deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_20 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(114deg);
+          transform: translate3d(0, -117px, 0) rotate(114deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_21 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(120deg);
+          transform: translate3d(0, -117px, 0) rotate(120deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_22 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(126deg);
+          transform: translate3d(0, -117px, 0) rotate(126deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_23 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(132deg);
+          transform: translate3d(0, -117px, 0) rotate(132deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_24 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(138deg);
+          transform: translate3d(0, -117px, 0) rotate(138deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_25 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(144deg);
+          transform: translate3d(0, -117px, 0) rotate(144deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_26 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(150deg);
+          transform: translate3d(0, -117px, 0) rotate(150deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_27 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(156deg);
+          transform: translate3d(0, -117px, 0) rotate(156deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_28 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(162deg);
+          transform: translate3d(0, -117px, 0) rotate(162deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_29 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(168deg);
+          transform: translate3d(0, -117px, 0) rotate(168deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_30 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(174deg);
+          transform: translate3d(0, -117px, 0) rotate(174deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_31 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(180deg);
+          transform: translate3d(0, -117px, 0) rotate(180deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_32 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(186deg);
+          transform: translate3d(0, -117px, 0) rotate(186deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_33 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(192deg);
+          transform: translate3d(0, -117px, 0) rotate(192deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_34 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(198deg);
+          transform: translate3d(0, -117px, 0) rotate(198deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_35 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(204deg);
+          transform: translate3d(0, -117px, 0) rotate(204deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_36 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(210deg);
+          transform: translate3d(0, -117px, 0) rotate(210deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_37 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(216deg);
+          transform: translate3d(0, -117px, 0) rotate(216deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_38 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(222deg);
+          transform: translate3d(0, -117px, 0) rotate(222deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_39 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(228deg);
+          transform: translate3d(0, -117px, 0) rotate(228deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_40 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(234deg);
+          transform: translate3d(0, -117px, 0) rotate(234deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_41 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(240deg);
+          transform: translate3d(0, -117px, 0) rotate(240deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_42 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(246deg);
+          transform: translate3d(0, -117px, 0) rotate(246deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_43 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(252deg);
+          transform: translate3d(0, -117px, 0) rotate(252deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_44 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(258deg);
+          transform: translate3d(0, -117px, 0) rotate(258deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_45 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(264deg);
+          transform: translate3d(0, -117px, 0) rotate(264deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_46 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(270deg);
+          transform: translate3d(0, -117px, 0) rotate(270deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_47 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(276deg);
+          transform: translate3d(0, -117px, 0) rotate(276deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_48 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(282deg);
+          transform: translate3d(0, -117px, 0) rotate(282deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_49 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(288deg);
+          transform: translate3d(0, -117px, 0) rotate(288deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_50 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(294deg);
+          transform: translate3d(0, -117px, 0) rotate(294deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_51 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(300deg);
+          transform: translate3d(0, -117px, 0) rotate(300deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_52 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(306deg);
+          transform: translate3d(0, -117px, 0) rotate(306deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_53 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(312deg);
+          transform: translate3d(0, -117px, 0) rotate(312deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_54 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(318deg);
+          transform: translate3d(0, -117px, 0) rotate(318deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_55 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(324deg);
+          transform: translate3d(0, -117px, 0) rotate(324deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_56 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(330deg);
+          transform: translate3d(0, -117px, 0) rotate(330deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_57 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(336deg);
+          transform: translate3d(0, -117px, 0) rotate(336deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_58 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(342deg);
+          transform: translate3d(0, -117px, 0) rotate(342deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_8 .bl_circle_ring_dot_59 {
+  -webkit-transform: translate3d(0, -117px, 0) rotate(348deg);
+          transform: translate3d(0, -117px, 0) rotate(348deg);
+  -webkit-transform-origin: 0 117px;
+          transform-origin: 0 117px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_fill {
+  -webkit-animation: pulsate 2s ease-in-out 3s alternate infinite both;
+          animation: pulsate 2s ease-in-out 3s alternate infinite both;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_0 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(-5.45455deg);
+          transform: translate3d(0, -128px, 0) rotate(-5.45455deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_1 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(0deg);
+          transform: translate3d(0, -128px, 0) rotate(0deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_2 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(5.45455deg);
+          transform: translate3d(0, -128px, 0) rotate(5.45455deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_3 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(10.90909deg);
+          transform: translate3d(0, -128px, 0) rotate(10.90909deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_4 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(16.36364deg);
+          transform: translate3d(0, -128px, 0) rotate(16.36364deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_5 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(21.81818deg);
+          transform: translate3d(0, -128px, 0) rotate(21.81818deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_6 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(27.27273deg);
+          transform: translate3d(0, -128px, 0) rotate(27.27273deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_7 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(32.72727deg);
+          transform: translate3d(0, -128px, 0) rotate(32.72727deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_8 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(38.18182deg);
+          transform: translate3d(0, -128px, 0) rotate(38.18182deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_9 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(43.63636deg);
+          transform: translate3d(0, -128px, 0) rotate(43.63636deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_10 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(49.09091deg);
+          transform: translate3d(0, -128px, 0) rotate(49.09091deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_11 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(54.54545deg);
+          transform: translate3d(0, -128px, 0) rotate(54.54545deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_12 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(60deg);
+          transform: translate3d(0, -128px, 0) rotate(60deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_13 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(65.45455deg);
+          transform: translate3d(0, -128px, 0) rotate(65.45455deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_14 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(70.90909deg);
+          transform: translate3d(0, -128px, 0) rotate(70.90909deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_15 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(76.36364deg);
+          transform: translate3d(0, -128px, 0) rotate(76.36364deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_16 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(81.81818deg);
+          transform: translate3d(0, -128px, 0) rotate(81.81818deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_17 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(87.27273deg);
+          transform: translate3d(0, -128px, 0) rotate(87.27273deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_18 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(92.72727deg);
+          transform: translate3d(0, -128px, 0) rotate(92.72727deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_19 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(98.18182deg);
+          transform: translate3d(0, -128px, 0) rotate(98.18182deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_20 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(103.63636deg);
+          transform: translate3d(0, -128px, 0) rotate(103.63636deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_21 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(109.09091deg);
+          transform: translate3d(0, -128px, 0) rotate(109.09091deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_22 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(114.54545deg);
+          transform: translate3d(0, -128px, 0) rotate(114.54545deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_23 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(120deg);
+          transform: translate3d(0, -128px, 0) rotate(120deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_24 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(125.45455deg);
+          transform: translate3d(0, -128px, 0) rotate(125.45455deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_25 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(130.90909deg);
+          transform: translate3d(0, -128px, 0) rotate(130.90909deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_26 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(136.36364deg);
+          transform: translate3d(0, -128px, 0) rotate(136.36364deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_27 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(141.81818deg);
+          transform: translate3d(0, -128px, 0) rotate(141.81818deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_28 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(147.27273deg);
+          transform: translate3d(0, -128px, 0) rotate(147.27273deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_29 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(152.72727deg);
+          transform: translate3d(0, -128px, 0) rotate(152.72727deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_30 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(158.18182deg);
+          transform: translate3d(0, -128px, 0) rotate(158.18182deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_31 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(163.63636deg);
+          transform: translate3d(0, -128px, 0) rotate(163.63636deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_32 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(169.09091deg);
+          transform: translate3d(0, -128px, 0) rotate(169.09091deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_33 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(174.54545deg);
+          transform: translate3d(0, -128px, 0) rotate(174.54545deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_34 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(180deg);
+          transform: translate3d(0, -128px, 0) rotate(180deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_35 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(185.45455deg);
+          transform: translate3d(0, -128px, 0) rotate(185.45455deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_36 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(190.90909deg);
+          transform: translate3d(0, -128px, 0) rotate(190.90909deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_37 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(196.36364deg);
+          transform: translate3d(0, -128px, 0) rotate(196.36364deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_38 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(201.81818deg);
+          transform: translate3d(0, -128px, 0) rotate(201.81818deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_39 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(207.27273deg);
+          transform: translate3d(0, -128px, 0) rotate(207.27273deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_40 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(212.72727deg);
+          transform: translate3d(0, -128px, 0) rotate(212.72727deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_41 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(218.18182deg);
+          transform: translate3d(0, -128px, 0) rotate(218.18182deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_42 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(223.63636deg);
+          transform: translate3d(0, -128px, 0) rotate(223.63636deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_43 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(229.09091deg);
+          transform: translate3d(0, -128px, 0) rotate(229.09091deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_44 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(234.54545deg);
+          transform: translate3d(0, -128px, 0) rotate(234.54545deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_45 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(240deg);
+          transform: translate3d(0, -128px, 0) rotate(240deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_46 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(245.45455deg);
+          transform: translate3d(0, -128px, 0) rotate(245.45455deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_47 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(250.90909deg);
+          transform: translate3d(0, -128px, 0) rotate(250.90909deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_48 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(256.36364deg);
+          transform: translate3d(0, -128px, 0) rotate(256.36364deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_49 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(261.81818deg);
+          transform: translate3d(0, -128px, 0) rotate(261.81818deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_50 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(267.27273deg);
+          transform: translate3d(0, -128px, 0) rotate(267.27273deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_51 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(272.72727deg);
+          transform: translate3d(0, -128px, 0) rotate(272.72727deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_52 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(278.18182deg);
+          transform: translate3d(0, -128px, 0) rotate(278.18182deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_53 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(283.63636deg);
+          transform: translate3d(0, -128px, 0) rotate(283.63636deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_54 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(289.09091deg);
+          transform: translate3d(0, -128px, 0) rotate(289.09091deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_55 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(294.54545deg);
+          transform: translate3d(0, -128px, 0) rotate(294.54545deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_56 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(300deg);
+          transform: translate3d(0, -128px, 0) rotate(300deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_57 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(305.45455deg);
+          transform: translate3d(0, -128px, 0) rotate(305.45455deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_58 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(310.90909deg);
+          transform: translate3d(0, -128px, 0) rotate(310.90909deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_59 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(316.36364deg);
+          transform: translate3d(0, -128px, 0) rotate(316.36364deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_60 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(321.81818deg);
+          transform: translate3d(0, -128px, 0) rotate(321.81818deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_61 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(327.27273deg);
+          transform: translate3d(0, -128px, 0) rotate(327.27273deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_62 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(332.72727deg);
+          transform: translate3d(0, -128px, 0) rotate(332.72727deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_63 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(338.18182deg);
+          transform: translate3d(0, -128px, 0) rotate(338.18182deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_64 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(343.63636deg);
+          transform: translate3d(0, -128px, 0) rotate(343.63636deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+.bl_circle .bl_circle_ring_9 .bl_circle_ring_dot_65 {
+  -webkit-transform: translate3d(0, -128px, 0) rotate(349.09091deg);
+          transform: translate3d(0, -128px, 0) rotate(349.09091deg);
+  -webkit-transform-origin: 0 128px;
+          transform-origin: 0 128px;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

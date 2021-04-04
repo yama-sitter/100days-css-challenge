@@ -1,0 +1,17 @@
+<!-- index=51 -->
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="style.css")
+    title 100days CSS Challenge
+  body
+    .ly_frame
+      .bl_circle
+        each i in [...Array(10).keys()]
+          div(class=`bl_circle_ring bl_circle_ring_${i}`)
+            - const dotsPerCircle = (12 + (i * 6))
+            each j in [...Array(dotsPerCircle).keys()]
+              div(class=`bl_circle_ring_dot bl_circle_ring_dot_${j}`)
+                .bl_circle_ring_dot_fill

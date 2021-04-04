@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #27ae60;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl_circle {
+  $parent: &;
+  $numberOfRings: 10;
+  $numberOfDots: 12;
+  $radius: 40;
+
+  &_ring {
+    position: absolute;
+    width: ($radius * 2) + px;
+    height: ($radius * 2) + px;
+    top: ((400 - ($radius * 2)) / 2) + px;
+    left: ((400 - ($radius * 2)) / 2) + px;
+
+    &_dot {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      top: ($radius) + px;
+      left: ($radius) + px;
+
+      &_fill {
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  @for $i from 0 to $numberOfRings {
+    $nullBase: $i - 1;
+    $dotsPerCircle: ($numberOfDots + ($i * 6));
+    #{$parent}_ring_#{$i} {
+      #{$parent}_ring_dot_fill {
+        animation: pulsate 2s ease-in-out ($i/3) + s alternate infinite both;
+      }
+
+      @for $j from 0 to $dotsPerCircle {
+        $nullBaseJ: $j - 1;
+        $angle: 360 / $dotsPerCircle;
+        #{$parent}_ring_dot_#{$j} {
+          $deg: ($nullBaseJ * $angle) + deg;
+          transform: translate3d(0, (($radius + ($nullBase * 11)) * -1) + px, 0)
+            rotate($deg);
+          transform-origin: 0 ($radius + ($nullBase * 11)) + px;
+        }
+      }
+    }
+  }
+
+  @keyframes pulsate {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
