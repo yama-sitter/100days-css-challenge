@@ -45,39 +45,39 @@
 }
 
 .bl_space_star_1 {
-  top: 7px;
-  -webkit-animation: 25s shooting-star 9.9s infinite both;
-          animation: 25s shooting-star 9.9s infinite both;
+  top: 66px;
+  -webkit-animation: 24s shooting-star 8s infinite both;
+          animation: 24s shooting-star 8s infinite both;
 }
 
 .bl_space_star_2 {
-  top: 65px;
-  -webkit-animation: 21s shooting-star 16.2s infinite both;
-          animation: 21s shooting-star 16.2s infinite both;
+  top: 25px;
+  -webkit-animation: 23s shooting-star 17.7s infinite both;
+          animation: 23s shooting-star 17.7s infinite both;
 }
 
 .bl_space_star_3 {
-  top: -14px;
-  -webkit-animation: 22s shooting-star 4.7s infinite both;
-          animation: 22s shooting-star 4.7s infinite both;
+  top: -24px;
+  -webkit-animation: 23s shooting-star 21.7s infinite both;
+          animation: 23s shooting-star 21.7s infinite both;
 }
 
 .bl_space_star_4 {
-  top: 47px;
-  -webkit-animation: 21s shooting-star 3.7s infinite both;
-          animation: 21s shooting-star 3.7s infinite both;
+  top: 14px;
+  -webkit-animation: 22s shooting-star 8s infinite both;
+          animation: 22s shooting-star 8s infinite both;
 }
 
 .bl_space_star_5 {
-  top: 32px;
-  -webkit-animation: 25s shooting-star 13s infinite both;
-          animation: 25s shooting-star 13s infinite both;
+  top: 55px;
+  -webkit-animation: 23s shooting-star 2.1s infinite both;
+          animation: 23s shooting-star 2.1s infinite both;
 }
 
 .bl_space_star_6 {
-  top: 59px;
-  -webkit-animation: 25s shooting-star 8.2s infinite both;
-          animation: 25s shooting-star 8.2s infinite both;
+  top: 58px;
+  -webkit-animation: 24s shooting-star 14.3s infinite both;
+          animation: 24s shooting-star 14.3s infinite both;
 }
 
 @-webkit-keyframes shooting-star {
