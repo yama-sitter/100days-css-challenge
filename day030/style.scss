@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+$bg: #263a4d;
+$dark: #406384;
+$middle: #5d90bf;
+$light: #7eb3e6;
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: $bg;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl_wave {
+  $parent: &;
+
+  position: absolute;
+  height: 150px;
+  width: 500px;
+  left: -50px;
+  display: flex;
+  background: #fff;
+
+  &_circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -24px;
+    border-radius: 9999px;
+
+    &:nth-child(even) {
+      top: -26px;
+    }
+  }
+
+  &_back {
+    top: 225px;
+    background: $dark;
+    animation: wave-back 4s ease-in-out alternate infinite;
+
+    #{$parent}_circle {
+      background: $dark;
+
+      &:nth-child(even) {
+        background: $bg;
+      }
+    }
+  }
+
+  &_middle {
+    top: 280px;
+    background: $middle;
+    animation: wave-middle 4s ease-in-out alternate infinite;
+
+    #{$parent}_circle {
+      background: $middle;
+
+      &:nth-child(even) {
+        background: $dark;
+      }
+    }
+  }
+
+  &_front {
+    top: 335px;
+    background: $light;
+    animation: wave-front 4s ease-in-out alternate infinite;
+
+    #{$parent}_circle {
+      background: $light;
+
+      &:nth-child(even) {
+        background: $middle;
+      }
+    }
+  }
+}
+
+@keyframes wave-back {
+  from {
+    transform: translate3d(-20px, 0, 0);
+  }
+  to {
+    transform: translate3d(20px, 0, 0);
+  }
+}
+
+@keyframes wave-middle {
+  from {
+    transform: translate3d(10px, 0, 0);
+  }
+  to {
+    transform: translate3d(-10px, 0, 0);
+  }
+}
+
+@keyframes wave-front {
+  from {
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    transform: translate3d(50px, 0, 0);
+  }
+}

@@ -1,0 +1,18 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="style.css")
+    title 100days CSS Challenge
+  body
+    .ly_frame
+      .bl_wave.bl_wave_back
+        each i in [...Array(10).keys()]
+          div(class=`bl_wave_circle`)
+      .bl_wave.bl_wave_middle
+        each i in [...Array(10).keys()]
+          div(class=`bl_wave_circle`)
+      .bl_wave.bl_wave_front
+        each i in [...Array(10).keys()]
+          div(class=`bl_wave_circle`)
