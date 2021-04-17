@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.ly_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #2b4147;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bl_thermostat {
+  $parent: &;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+  &:hover {
+    #{$parent}_control {
+      &_indicator {
+        transform: rotate(-20deg);
+      }
+
+      &_temp {
+        &_room {
+          opacity: 0;
+          transform: translateX(-50px) scale(0.5);
+
+          &_two {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+  }
+
+  &_control {
+    position: absolute;
+    z-index: 5;
+    width: 130px;
+    height: 130px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 9999px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+    &_indicator {
+      position: absolute;
+      width: 1px;
+      height: 12px;
+      left: 50%;
+      top: 0;
+      background: #6c6c6c;
+      transform-origin: 0 65px;
+      transform: rotate(-50deg);
+      transition: all 0.5s ease-in-out;
+    }
+
+    &_temp {
+      &_outside {
+        position: absolute;
+        top: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-weight: 300;
+        font-size: 12px;
+      }
+
+      &_room {
+        position: absolute;
+        top: 34px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+        color: #873183;
+        letter-spacing: -8px;
+        padding-right: 12px;
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 0.5s ease-in-out;
+
+        & > span {
+          position: absolute;
+          top: 0;
+          font-size: 20px;
+          line-height: 34px;
+          padding: 0 0 0 7px;
+        }
+
+        &_two {
+          opacity: 0;
+          transform: translateX(50px) scale(0.5);
+
+          & > span {
+            right: 30px;
+          }
+        }
+      }
+    }
+
+    &_room {
+      position: absolute;
+      bottom: 18px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+
+  &_ring {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(
+      90deg,
+      rgba(103, 43, 149, 1) 0%,
+      rgba(206, 46, 95, 1) 100%
+    );
+    border-radius: 9999px;
+    box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.3);
+
+    &_overlay {
+      position: absolute;
+      width: 95px;
+      height: 95px;
+      top: 50%;
+      left: 50%;
+      background: #f2f2f2;
+      transform-origin: 0 0;
+      transform: rotate(45deg);
+      border-radius: 0 0 95px 0;
+    }
+  }
+}
